@@ -4,6 +4,7 @@ import leramp.proyectoMsStore.serviceproduct.entity.Category;
 import leramp.proyectoMsStore.serviceproduct.entity.Product;
 import leramp.proyectoMsStore.serviceproduct.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -13,7 +14,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService {
 
-
+    //como le agregamos un constructor, le quitamos la inyección
+    //De esta manera, con @RequiredArgsConstructor se hace una inyección de dep por constructor
+    //@Autowired//le agregamos final
     private final ProductRepository productRepository;
 
     @Override
