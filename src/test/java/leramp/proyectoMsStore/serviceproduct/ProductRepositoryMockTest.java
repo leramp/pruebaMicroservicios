@@ -20,9 +20,9 @@ public class ProductRepositoryMockTest {
 
     @Test
     public void whenFindByCategory_thenReturnListProduct(){
-        //primero creamos elproducto que vamos a insertar en la bbdd
+        //primero creamos el producto que vamos a insertar en la bbdd
         //y que luego vamos a hacer una búsqueda de esa categoría del producto que estamos
-        //insertando, entonces para poder insertar hacemos algo adicional. Vamos  a la clase Product
+        //insertando, entonces para poder insertar hacemos algo adicional. Vamos a la clase Product
         //y agregamos los constructores y el builder
         Product product01 = Product.builder()
                 .name("computer")
