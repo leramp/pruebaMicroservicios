@@ -2,17 +2,16 @@ package leramp.proyectoMsStore.serviceproduct.entity;
 
 
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name="tbl_categories")
 @Data
-
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 //@Data//data hace lo que hace @Getter y @Setter y además hashcode toString y Equals
 public class Category {
     @Id
